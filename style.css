@@ -16,9 +16,9 @@ body{
 }
 
 .main-container{
-    width: 35%;
+    width: 30%;
     background: hsl(0, 0%, 12%);
-    padding: 10px 20px;
+    padding: 10px 40px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
@@ -86,7 +86,7 @@ body{
     padding: 10px 20px;
     background: hsl(0, 0%, 20%);
     border-radius: 6px;
-    width: 90%;
+    width: 100%;
     text-align: center;
     font-weight: 600;
     font-size: 0.9rem;
@@ -98,5 +98,24 @@ body{
     transition: 0.4s ease-in-out;
     color: hsl(0, 0%, 8%);
     background: hsl(75, 94%, 57%);
+}
+
+/* Responsiveness Starts Here */
+@media screen and (min-width: 250px) and (max-width: 1000px) {
+
+    .main-container{
+        width: 90%;
+        background: hsl(0, 0%, 12%);
+        padding: 10px 40px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
 }
 
